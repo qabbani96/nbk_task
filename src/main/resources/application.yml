@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: NBK-SERVICE
+server:
+  port: 8066
+api:
+  products:
+    url: https://dummyjson.com
+
+paging:
+  limit: ${LIMIT:10}  # Default to 10 if LIMIT env variable is not set
+
+cache_size: ${CACHE_SIZE:50}  # Default to 50 if CACHE_SIZE env variable is not set
+cache_name: productsCache
